@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='eng'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>freeCodeCamp Survey</title>
+    <link rel='stylesheet' href='styles.css'
+  </head>
+  <body>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the platform</p>
+    
+    <form id='survey-form'>
+      <fieldset>
+        <label for='name' id='name-label'> Name
+        <input id='name' type='text' placeholder='Enter your name' required/><label>
+      <label for='email' id='email-label'> Email
+        <input id='email' type='email' placeholder='Enter your email' required/><label>
+      <label for='number' id='number-label'> Age (optional)
+        <input id='number' type='number' min='18' max='120' placeholder='Age' /><label>
+      <label for='dropdown' id='dropdown-label'>What is your current role?
+        <select id='dropdown' name='dropdown'>
+          <option value=''>(please select one)</option>
+          <option value='1'>Student</option>
+          <option value='2'>Worker</option>
+          <option value='3'>Other</option>
+        </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <label for='recommend'>Would you recommend us?</label>
+          <label><input id='yes' type='radio' name='recommend' value='4' class='inline' checked />Yes</label>
+          <label><input id='no' type='radio' name='recommend' value='5' class='inline' />No</label>
+          <label><input id='maybe' type='radio' name='recommend' value='6' class='inline' />Maybe</label>
+      </fieldset>
+      <fieldset>
+      <label for='checkbox'>What can be improved? Please tick all that apply</label>
+          <label for='front-end'><input id='front-end' type='checkbox' value='7' class='inline' />Front-End</label>
+          <label for='not-front-end'><input id='not-front-end' type='checkbox' value='8' class='inline' />Not Front-End</label>
+      </fieldset>
+      <fieldset>
+      <label for='suggestions'>Do you have any other suggestions on how we can improve?</label>
+        <textarea id='suggestions' name='suggestions' placeholder='Enter your comments or suggestions here'></textarea>
+      </fieldset>
+      <input type='submit' value='Submit' id='submit' />
+    </form>
+  </body>
